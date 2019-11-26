@@ -1,4 +1,4 @@
-all: ./bin/lesson2 ./bin/multicalc ./bin/binary ./bin/denary ./bin/stacy ./bin/assignment01 ./bin/assignment1 ./bin/positiveNegative ./bin/numGuessing ./bin/db ./bin/aquaPark
+all: ./bin/lesson2 ./bin/multicalc ./bin/binary ./bin/denary ./bin/stacy ./bin/assignment01 ./bin/assignment1 ./bin/positiveNegative ./bin/numGuessing ./bin/db ./bin/aquaPark ./bin/testExmp
 
 ./bin/lesson2: lesson2.cpp
 	g++ lesson2.cpp -o ./bin/lesson2
@@ -32,3 +32,7 @@ all: ./bin/lesson2 ./bin/multicalc ./bin/binary ./bin/denary ./bin/stacy ./bin/a
 
 ./bin/aquaPark: aquaPark.cpp
 	g++ aquaPark.cpp -o ./bin/aquaPark
+
+./bin/testExmp: testExmp.cpp
+	g++ testExmp.cpp -o ./bin/testExmp	
+
