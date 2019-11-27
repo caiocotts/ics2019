@@ -15,6 +15,6 @@ int main() {
     total -= (0.05 * total);
     cout << total << endl;
   } else {
-    cout << total << endl;
+    cout << "$" << total << endl;
   }
 }
