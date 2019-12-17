@@ -1,4 +1,4 @@
-all: ./bin/lesson2 ./bin/multicalc ./bin/binary ./bin/denary ./bin/stacy ./bin/assignment01 ./bin/assignment1 ./bin/positiveNegative ./bin/numGuessing ./bin/db ./bin/aquaPark ./bin/testExmp ./bin/validationLoop ./bin/numToString ./bin/marksProgram
+all: ./bin/lesson2 ./bin/multicalc ./bin/binary ./bin/denary ./bin/stacy ./bin/assignment01 ./bin/assignment1 ./bin/positiveNegative ./bin/numGuessing ./bin/db ./bin/aquaPark ./bin/testExmp ./bin/validationLoop ./bin/numToString ./bin/marksProgram 
 
 ./bin/lesson2: lesson2.cpp
 	g++ lesson2.cpp -o ./bin/lesson2
