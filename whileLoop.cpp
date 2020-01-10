@@ -2,6 +2,9 @@
 #include <iostream>
 using namespace std;
 
+// I have not completed letters d and f because I did not understand what was
+// asked of me
+
 int main() {
   int firstNum = 0, secondNum = 0, sumEven = 0, powSumOdd = 0;
   cout << "Enter 2 digits, the first being smaller than the second: ";
