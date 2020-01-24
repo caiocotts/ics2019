@@ -17,3 +17,4 @@ int main() {
     sum += digit;
   }
   cout << sum << endl;
+}

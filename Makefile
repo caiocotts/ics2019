@@ -1,4 +1,4 @@
-all: ./bin/lesson2 ./bin/multicalc ./bin/binary ./bin/denary ./bin/stacy ./bin/assignment01 ./bin/assignment1 ./bin/positiveNegative ./bin/numGuessing ./bin/db ./bin/aquaPark ./bin/testExmp ./bin/validationLoop ./bin/numToString ./bin/marksProgram 
+all: ./bin/lesson2 ./bin/multicalc ./bin/binary ./bin/denary ./bin/stacy ./bin/assignment01 ./bin/assignment1 ./bin/positiveNegative ./bin/numGuessing ./bin/db ./bin/aquaPark ./bin/testExmp ./bin/validationLoop ./bin/numToString ./bin/marksProgram ./bin/aaGenerator 
 
 ./bin/lesson2: lesson2.cpp
 	g++ lesson2.cpp -o ./bin/lesson2
@@ -44,3 +44,6 @@ all: ./bin/lesson2 ./bin/multicalc ./bin/binary ./bin/denary ./bin/stacy ./bin/a
 
 ./bin/marksProgram: marksProgram.cpp
 	g++ marksProgram.cpp -o ./bin/marksProgram	
+
+./bin/aaGenerator: aaGenerator.cpp
+	g++ aaGenerator.cpp -o ./bin/aaGenerator	
