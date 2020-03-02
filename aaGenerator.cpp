@@ -3,6 +3,17 @@
 #include <string>
 using namespace std;
 
+/*
+1
+Unit 2- Control Structure
+
+By : Caio dos Santos Cotts Quintao
+
+This program generates, using *, a total of 7 different forms of 3 different
+shapes: lines, rectangles and triangles
+*/
+
+// Function that generates a horizontal line.
 void hLine() {
   int length;
   cout << "Enter lenght of line(1-20): ";
@@ -19,6 +30,7 @@ void hLine() {
   cout << "\n";
 }
 
+// Function that generates a vertical line.
 void vLine() {
   int height;
   cout << "Enter height of line(1-20): ";
@@ -34,6 +46,7 @@ void vLine() {
   }
 }
 
+// Function that generates a rectangle.
 void rect() {
   int length;
   int height;
@@ -57,6 +70,8 @@ void rect() {
   }
 }
 
+// Function that generates a right angle triangle with its hypotenuse facing the
+// right.
 void lSlantTriangle() {
   int height;
   cout << "Enter height of triangle: ";
@@ -69,6 +84,8 @@ void lSlantTriangle() {
   }
 }
 
+// Function that generates a right angle triangle with its hypotenuse facing the
+// left.
 void rSlantTriangle() {
   int height;
 
@@ -85,6 +102,7 @@ void rSlantTriangle() {
   }
 }
 
+// Function that generates an isosceles triangle.
 void isoTriangle() {
   int height;
   cout << "Enter height of triangle: ";
@@ -100,12 +118,14 @@ void isoTriangle() {
   }
 }
 
+// Function that generates two isosceles triangles stacked on top of each other.
 void doubleIsoTriangle() {
   int height;
   cout << "Enter height of triangle: ";
   cin >> height;
   height /= 2;
   height += 1;
+  // First triangle.
   for (int j = height; j > 0; j--) {
     for (int s = (height - j); s > 0; s--) {
       cout << " ";
@@ -115,6 +135,7 @@ void doubleIsoTriangle() {
     }
     cout << "\n";
   }
+  // Second triangle
   for (int j = 2; j < height + 1; j++) {
     for (int s = (height - j); s > 0; s--) {
       cout << " ";
@@ -126,6 +147,8 @@ void doubleIsoTriangle() {
   }
 }
 
+// Main function where the swith structure is located with the addition of all
+// counters.
 int main() {
   bool running = true;
   int counter_hLine = 0;

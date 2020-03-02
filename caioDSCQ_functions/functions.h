@@ -1,0 +1,12 @@
+int getPentagonalNumber(int n);
+void question1();
+int sumDigits(int n);
+void question2();
+int reverse(int n);
+void question3();
+int isPalindrome(int n);
+void question4();
+void displaySortedNumbers(int num1, int num2, int num3);
+void question5();
+void displayPattern(int n);
+void question6();

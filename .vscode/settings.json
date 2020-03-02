@@ -3,7 +3,8 @@
         "ostream": "cpp",
         "iostream": "cpp",
         "cmath": "cpp",
-        "string_view": "cpp"
+        "string_view": "cpp",
+        "iomanip": "cpp"
     },
     "python.formatting.provider": "black",
     "C_Cpp.errorSquiggles": "Disabled"
