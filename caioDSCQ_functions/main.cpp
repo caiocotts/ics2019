@@ -9,5 +9,10 @@ int main() {
   // question3();
   // question4();
   // question5();
-  question6();
+  // question6();
+  // question7();
+  // question8();
+  // question9();
+  // question10();
+  question11();
 }

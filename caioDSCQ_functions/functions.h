@@ -10,3 +10,14 @@ void displaySortedNumbers(int num1, int num2, int num3);
 void question5();
 void displayPattern(int n);
 void question6();
+void futureInvestmentValue(double investmentAmount, double annualInterestRate,
+                           int years);
+void question7();
+void printMatrix(int n);
+void question8();
+double distance(int x1, int y1, int x2, int y2);
+void question9();
+void convertMillis(int millis);
+void question10();
+void addCoins(double pennies, double nickels, double dimes, double);
+void question11();

@@ -1,9 +1,72 @@
 #include "functions.h"
+#include <cmath>
+#include <cstdlib>
+#include <ctime>
 #include <iomanip>
 #include <iostream>
 #include <string>
 
 using namespace std;
+
+void addCoins(double pennies, double nickels, double dimes, double quarters) {
+  pennies /= 100;
+  nickels /= 20;
+  dimes /= 10;
+  quarters /= 4;
+  double sum = pennies + nickels + dimes + quarters;
+  cout << sum;
+}
+
+void convertMillis(int millis) {
+  double seconds = millis / 1000.0;
+  if (seconds < 60) {
+    cout << "00:00:" << seconds << "\n";
+    return;
+  }
+
+  double minutes;
+  seconds = modf(seconds / 60, &minutes);
+  seconds *= 60.0;
+  if (minutes < 60) {
+    cout << "00:" << minutes << ":" << seconds << "\n";
+    return;
+  }
+
+  double hours;
+  minutes = modf(minutes / 60, &hours);
+  minutes *= 60.0;
+  cout << hours << ':' << minutes << ':' << seconds << "\n";
+}
+
+double distance(int x1, int y1, int x2, int y2) {
+  double distance = 0.0;
+  distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+  return distance;
+}
+
+void printMatrix(int n) {
+  srand(time(0));
+  int val = (rand() % 2);
+  for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) {
+      cout << val << ' ';
+      val = (rand() % 2);
+    }
+    cout << "\n";
+  }
+}
+
+void futureInvestmentValue(double investmentAmount, double annualInterestRate,
+                           int years) {
+
+  double futureValues = investmentAmount;
+  for (int i = 0; i < years; i++) {
+    for (int j = 0; j < 12; j++) {
+      futureValues += futureValues * (annualInterestRate / 12) / 100;
+    }
+    cout << futureValues << "\n";
+  }
+}
 
 void displayPattern(int n) {
 
@@ -122,4 +185,38 @@ void question6() {
   int height = 0;
   cin >> height;
   displayPattern(height);
+}
+
+void question7() {
+  double investmentAmount, annualInterestRate;
+  int years;
+  cin >> investmentAmount >> annualInterestRate >> years;
+  futureInvestmentValue(investmentAmount, annualInterestRate, years);
+}
+
+void question8() {
+  int val;
+  cin >> val;
+  printMatrix(val);
+}
+
+void question9() {
+  double result;
+  int x1, y1, x2, y2;
+  cin >> x1 >> y1 >> x2 >> y2;
+  result = distance(x1, y1, x2, y2);
+  cout << result;
+}
+
+void question10() {
+  int millis;
+  cin >> millis;
+  convertMillis(millis);
+}
+
+void question11() {
+  double pennies, nickels, dimes, quarters;
+  cin >> pennies >> nickels >> dimes >> quarters;
+
+  addCoins(pennies, nickels, dimes, quarters);
 }
